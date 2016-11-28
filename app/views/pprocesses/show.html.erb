@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Process:</strong>
+  <%= @pprocess.process %>
+</p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @pprocess.customer %>
+</p>
+
+<%= link_to 'Edit', edit_pprocess_path(@pprocess) %> |
+<%= link_to 'Back', pprocesses_path %>

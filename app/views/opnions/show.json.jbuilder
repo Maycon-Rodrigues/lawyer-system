@@ -1,0 +1,1 @@
+json.partial! "opnions/opnion", opnion: @opnion

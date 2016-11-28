@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Opnions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Opnion</th>
+      <th>Customer</th>
+      <th>User</th>
+      <th>Pprocess</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @opnions.each do |opnion| %>
+      <tr>
+        <td><%= opnion.opnion %></td>
+        <td><%= opnion.customer %></td>
+        <td><%= opnion.user %></td>
+        <td><%= opnion.pprocess %></td>
+        <td><%= link_to 'Show', opnion %></td>
+        <td><%= link_to 'Edit', edit_opnion_path(opnion) %></td>
+        <td><%= link_to 'Destroy', opnion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Opnion', new_opnion_path %>

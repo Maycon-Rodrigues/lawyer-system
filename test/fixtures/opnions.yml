@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  opnion: MyText
+  customer: one
+  user: one
+  pprocess: one
+
+two:
+  opnion: MyText
+  customer: two
+  user: two
+  pprocess: two

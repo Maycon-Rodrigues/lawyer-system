@@ -1,0 +1,1 @@
+json.array! @pprocesses, partial: 'pprocesses/pprocess', as: :pprocess

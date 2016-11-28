@@ -1,0 +1,1 @@
+json.array! @opnions, partial: 'opnions/opnion', as: :opnion

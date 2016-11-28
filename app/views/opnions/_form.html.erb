@@ -1,0 +1,37 @@
+<%= form_for(opnion) do |f| %>
+  <% if opnion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(opnion.errors.count, "error") %> prohibited this opnion from being saved:</h2>
+
+      <ul>
+      <% opnion.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :opnion %>
+    <%= f.text_area :opnion %>
+  </div>
+
+  <div class="field">
+    <%= f.label :customer_id %>
+    <%= f.text_field :customer_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :user_id %>
+    <%= f.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pprocess_id %>
+    <%= f.text_field :pprocess_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
