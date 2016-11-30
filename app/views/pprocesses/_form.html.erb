@@ -12,14 +12,25 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :process %>
+    <%= f.label :process %><br />
     <%= f.number_field :process %>
   </div>
 
+  <br>
+
   <div class="field">
-    <%= f.label :customer_id %>
+    <%= f.label :archive %><br />
+    <%= f.file_field :archive %>
+  </div>
+
+  <br>
+
+  <div class="field">
+    <%= f.label :customer_id %><br />
     <%= f.text_field :customer_id %>
   </div>
+
+  <br>
 
   <div class="actions">
     <%= f.submit %>

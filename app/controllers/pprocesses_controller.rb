@@ -1,5 +1,6 @@
 class PprocessesController < ApplicationController
   before_action :set_pprocess, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /pprocesses
   # GET /pprocesses.json
